@@ -31,20 +31,17 @@ const populateButton = document.querySelector('.populate-button')
 
 
 populateButton.addEventListener('click', (e)=>{
-    let classListOfGrid = gridContainer.classList;
-    console.log(classListOfGrid);
     
-    gridContainer.classList.forEach(element => {
-        console.log(element);
+    // gridContainer.classList.forEach(element => {
+        // console.log(element);
         
         // if(element.startsWith('grid-rows-')){
         //     gridContainer.classList.remove(element);
         // }
-        if(element.startsWith('grid-cols-')){
-            gridContainer.classList.remove(element);
-        }
-    });
-
+        // if(element.startsWith('grid-cols-')){
+            // gridContainer.classList.remove(element);
+        // }
+    // });
 
     gridContainer.classList.add(`grid-cols-${numberOfCols}`);
     // gridContainer.classList.add(`grid-rows-${numberOfRows}`);
